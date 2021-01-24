@@ -1,0 +1,10 @@
+{{template "header" .}}
+    <h1>位置情報を入力してください。</h1>
+    <form action="/single" method="post">
+        <label>緯度</label>
+        <input type="text" placeholder="緯度を入力してね" name="lat" />
+        <label>経度</label>
+        <input type="text" placeholder="軽度を入力してね" name="lng" />
+        <input type="submit" value="送信" />
+    </form>
+{{template "footer"}}
